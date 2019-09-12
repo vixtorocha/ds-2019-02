@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class UniversidadeTest {
 
     @Test
-    void marcadorTXT() {
+    void recuperaInstancia() {
         final Universidade universidade = Universidade.getInstance();
         final String[] instituicoes = universidade.getInstituicoes();
         assertEquals("INF", instituicoes[0]);
