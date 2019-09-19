@@ -28,3 +28,23 @@ refletir a situação excepcional.
 - R5 O aplicativo deve retornar o código zero para indicar que a execução foi
 realizada de forma satisfatória. 
 
+## Análise de requisitos
+
+### Diagram de contexto
+
+![Diagrama de Contexto](https://user-images.githubusercontent.com/1735792/65259901-d94e6f80-dadb-11e9-8e34-bc5c760f53e8.png)
+
+
+### Possíveis interações
+
+Exibe informações de uso do aplicativo (Json-XML Converter)
+```shell script
+> jxc 
+```
+
+Converte o conteúdo do arquivo x.json, a ser procurado no diretório corrente, para o
+conteúdo equivalente no formato XML. 
+```shell script
+> jxc x.json 
+```
+
