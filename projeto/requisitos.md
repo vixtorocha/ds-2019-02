@@ -42,7 +42,10 @@ terceiros (biblioteca Conversor).
 ![Diagrama de Contexto](https://user-images.githubusercontent.com/1735792/65259901-d94e6f80-dadb-11e9-8e34-bc5c760f53e8.png)
 
 
-### Possíveis interações
+### Possíveis interações (protótipo)
+
+Além de ilustrar possíveis interações, registram as várias situações excepcionais que podem ocorrer, o que é relevante para o design.
+Devemos identificar todos os casos de uso. 
 
 Exibe informações de uso do aplicativo (Json-XML Converter)
 ```shell script
