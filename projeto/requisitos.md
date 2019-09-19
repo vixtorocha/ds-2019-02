@@ -32,6 +32,13 @@ realizada de forma satisfatória.
 
 ### Diagram de contexto
 
+O aplicativo conversor deve receber requisitos de um usuário, via linha de
+comandos, para realizar a conversão entre documentos (arquivos) nos formatos
+JSON e XML. Neste sentido, conforme ilustrado abaixo, o aplicativo tanto obtém
+o conteúdo de arquivos do sistema de arquivos quanto persiste conteúdos
+convertidos. Adicionalmente, a conversão é realizada por biblioteca de
+terceiros (biblioteca Conversor).
+   
 ![Diagrama de Contexto](https://user-images.githubusercontent.com/1735792/65259901-d94e6f80-dadb-11e9-8e34-bc5c760f53e8.png)
 
 
