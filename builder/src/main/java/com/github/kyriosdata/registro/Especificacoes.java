@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+// TODO criar os testes (não são opcionais)
 public class Especificacoes {
 
     private List<Double> precos;
