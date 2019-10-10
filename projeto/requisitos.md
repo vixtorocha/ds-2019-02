@@ -10,22 +10,22 @@ relação a um XML Schema ou JSON Schema correspondente
 
 ## Requisitos
 
-- R1 O aplicativo deve receber via linha de comandos os argumentos para
+- **R1** O aplicativo deve receber via linha de comandos os argumentos para
 realizar a operação desejada.
 
-- R2 O aplicativo deve indicar a impossibilidade de interpretar corretamente
+- **R2** O aplicativo deve indicar a impossibilidade de interpretar corretamente
 os argumentos fornecidos. Por exemplo, se algum argumento necessário não
 é fornecido, ou não existe, dentre inúmeras outras situações.
 
-- R3 O aplicativo deve indicar a impossibilidade de executar a requisição
+- **R3** O aplicativo deve indicar a impossibilidade de executar a requisição
 corretamente interpretada. Por exemplo, se não há espaço em disco, se o
 arquivo a ser consultado para leitura não possuir a permissão de leitura e
 assim por diante.
 
-- R4 O aplicativo deve retornar um código de erro (valor diferente de 0) para
+- **R4** O aplicativo deve retornar um código de erro (valor diferente de 0) para
 refletir a situação excepcional.
 
-- R5 O aplicativo deve retornar o código zero para indicar que a execução foi
+- **R5** O aplicativo deve retornar o código zero para indicar que a execução foi
 realizada de forma satisfatória. 
 
 ## Análise de requisitos
@@ -56,5 +56,16 @@ Converte o conteúdo do arquivo x.json, a ser procurado no diretório corrente, 
 conteúdo equivalente no formato XML. 
 ```shell script
 > jxc x.json 
+```
+Converte o conteúdo do arquivo x.json no diretório corrente, e verifica a conformidade do conteúdo de entrada e o de saída.
+```shell script
+> jxc x.json -c
+```
+
+O software identifica um erro de conformidade
+```shell script
+> jxc x.json -c
+> verificando a conformidade...
+> x.json não atende
 ```
 
