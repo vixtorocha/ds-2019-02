@@ -7,7 +7,6 @@ public class ClasseCriada extends FileInputStream implements AutoCloseable {
 
     public ClasseCriada(final String name) throws FileNotFoundException {
         super(name);
-        // TODO Auto-generated constructor stub
     }
 
     @Override
