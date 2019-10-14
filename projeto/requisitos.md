@@ -57,6 +57,13 @@ conteúdo equivalente no formato XML.
 ```shell script
 > jxc x.json 
 ```
+
+Arquivo não foi encontrado no caminho correspondente.
+```shell script
+> jxc x.json 
+> Arquivo não encontrado.
+```
+
 Converte o conteúdo do arquivo x.json no diretório corrente, e verifica a conformidade do conteúdo de entrada e o de saída.
 ```shell script
 > jxc x.json -c
@@ -65,7 +72,11 @@ Converte o conteúdo do arquivo x.json no diretório corrente, e verifica a conf
 O software identifica um erro de conformidade
 ```shell script
 > jxc x.json -c
-> verificando a conformidade...
-> x.json não atende
+> x.json não está conforme.
 ```
 
+O software identifica um erro de conformidade no resultado final
+```shell script
+> jxc x.json -c
+> x.xml não está conforme.
+```
