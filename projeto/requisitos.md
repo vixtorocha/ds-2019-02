@@ -1,5 +1,5 @@
 # Conversor XML <-> JSON 
-Aplicativo via linha de comandos para conversão de documento XML para JSON e
+Design de um aplicativo via linha de comandos para conversão de documento XML para JSON e
 vice-versa.
 
 ## Descrição do módulo
@@ -56,12 +56,13 @@ Converte o conteúdo do arquivo x.json, a ser procurado no diretório corrente, 
 conteúdo equivalente no formato XML. 
 ```shell script
 > jxc x.json 
+Conversão completa.
 ```
 
 Arquivo não foi encontrado no caminho correspondente.
 ```shell script
 > jxc x.json 
-> Arquivo não encontrado.
+Arquivo não encontrado.
 ```
 
 Converte o conteúdo do arquivo x.json no diretório corrente, e verifica a conformidade do conteúdo de entrada e o de saída.
@@ -72,11 +73,17 @@ Converte o conteúdo do arquivo x.json no diretório corrente, e verifica a conf
 O software identifica um erro de conformidade
 ```shell script
 > jxc x.json -c
-> x.json não está conforme.
+x.json não está conforme.
 ```
 
 O software identifica um erro de conformidade no resultado final
 ```shell script
 > jxc x.json -c
-> x.xml não está conforme.
+x.xml não está conforme.
+```
+
+Ocorreu um erro desconhecido.
+```shell script
+> jxc x.json -c
+Ocorreu um erro.
 ```
