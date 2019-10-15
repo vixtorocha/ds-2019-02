@@ -87,3 +87,12 @@ Ocorreu um erro desconhecido.
 > jxc x.json -c
 Ocorreu um erro.
 ```
+
+### Design arquitetural
+A arquitetura do software é dividida em três pacotes:
+
+**Client**, que é o pacote que será responsável pela interação com o usuário. 
+
+**Conversao**, que corresponde às classes responsáveis que usam a biblioteca de conversão para converter e verificar a conformidade.
+
+**Arquivos**, que corresponde às classes responsáveis por fazer manipulações de leitura e escrita de arquivos.
