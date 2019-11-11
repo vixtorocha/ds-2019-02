@@ -19,41 +19,55 @@ Devemos identificar todos os casos de uso.
 
 Exibe informações de uso do aplicativo (Json-XML Converter)
 ```shell script
-> jxc 
+> jxc
+
+O JSON-XML Converter é um conversor de JSON e XML e vice-versa
+Uso:  
+    jxc [caminho]
+    (Em que "caminho" é um caminho para um arquivo JSON ou XML de entrada que será convertido.)
+
+    jxc [caminho] -check
+    (Faz a conversão e checa quanto a conformidade do resultado)
+
 ```
 
 Converte o conteúdo do arquivo x.json, a ser procurado no diretório corrente, para o
 conteúdo equivalente no formato XML. 
 ```shell script
-> jxc x.json 
+> jxc x.json
+[...]
 Conversão completa.
 ```
 
 Arquivo não foi encontrado no caminho correspondente.
 ```shell script
 > jxc x.json 
+[...]
 Arquivo não encontrado.
 ```
 
 Converte o conteúdo do arquivo x.json no diretório corrente, e verifica a conformidade do conteúdo de entrada e o de saída.
 ```shell script
-> jxc x.json -c
+> jxc x.json -check
 ```
 
 O software identifica um erro de conformidade
 ```shell script
-> jxc x.json -c
+> jxc x.json -check
+[...]
 x.json não está conforme.
 ```
 
 O software identifica um erro de conformidade no resultado final
 ```shell script
-> jxc x.json -c
+> jxc x.json -check
+[...]
 x.xml não está conforme.
 ```
 
 Ocorreu um erro desconhecido.
 ```shell script
-> jxc x.json -c
+> jxc x.json -check
+[...]
 Ocorreu um erro.
 ```
