@@ -18,6 +18,10 @@ No pacote "Client":
     - Se o argumento é invalido, incluindo se o caminho fornecido não existe
     - Se o aplicativo é incapaz de realizar suas funções. Como por exemplo, por falta de memória ou espaço.
 
-No pacote "Conversao":  
+No pacote "Conversao":
 
 No pacote "Arquivos":
+- Classe EntradaJSON
+- Classe EntradaXML
+- Classe SaidaJSON
+- Classe SaidaXML
