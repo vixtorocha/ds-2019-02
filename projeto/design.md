@@ -11,16 +11,20 @@ A arquitetura do software é dividida em três pacotes:
 
 ## Implementação
 
-No pacote "Client":
+#### No pacote "Client":
 - Classe Application. Contém o método main, que inicia a aplicação.
-  - O método main recebe dois parâmetros: O caminho do arquivo json e um argumento numérico que indica deve ser feita a verificação de conformidade (Valor 0 se não).
+  - O método main recebe dois parâmetros: O caminho do arquivo e um argumento numérico que indica se deve ser feita a verificação de conformidade (Valor 0 se não).
   - A classe Application deve lançar exceções nos seguintes cenários:
     - Se o argumento é invalido, incluindo se o caminho fornecido não existe
     - Se o aplicativo é incapaz de realizar suas funções. Como por exemplo, por falta de memória ou espaço.
 
-No pacote "Conversao":
+#### No pacote "Conversao":
+- Classe Converter  
+A classe converter deve fazer uso de uma biblioteca de conversão de XML para JSON e vice-versa.
+  - Método jsonToXML()
+  - Método xmlToJSON()
 
-No pacote "Arquivos":
+#### No pacote "Arquivos":
 - Classe EntradaJSON
 - Classe EntradaXML
 - Classe SaidaJSON
