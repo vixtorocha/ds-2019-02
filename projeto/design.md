@@ -41,7 +41,18 @@ A classe converter deve fazer uso de uma biblioteca de conversão de XML para JS
     - Recebe o arquivo de entrada em XML.
     - O método xmlToJSON() implementa a biblioteca de conversão, chamando o método da bilioteca que faça a conversão de XML para JSON.
     - Retorna o arquivo convertido para XML
-
+  - Método check()
+    - Recebe como parâmetro o arquivo que deverá ser checado.
+    - Verifica se o arquivo é JSON, se sim, chama checaJSON().
+    - Verifica se o arquivo é XML, se sim, chama checaXML().
+  - Método checaJSON()
+    - Recebe como parâmetro o arquivo que deverá ser checado.
+    - Usa o método de checar conformidade de JSON na biblioteca de conversão
+    - Lança uma exceção se o arquivo não estiver conforme
+  - Método checaXML()
+    - Recebe como parâmetro o arquivo que deverá ser checado.
+    - Usa o método de checar conformidade de XML na biblioteca de conversão.
+    - Lança uma exceção se o arquivo não estiver conforme.
   
 #### No pacote "Arquivos":
 - Classe ManipuladorArquivo
