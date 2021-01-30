@@ -1,3 +1,5 @@
+*.sql
+
 # Visual Code
 .project
 .vscode/
